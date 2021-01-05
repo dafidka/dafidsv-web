@@ -26,6 +26,7 @@ header {
     text-decoration: none;
     font-size: 20px;
     transition: font-size .5s;
+    color: cornflowerblue;
 }
 
 .menu2 {
@@ -35,6 +36,7 @@ header {
     text-decoration: none;
     font-size: 20px;
     transition: font-size .5s;
+    color: rgb(152, 100, 237);
 }
 
 .menu1:hover {
