@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
+
+* {
+    background-color: rgb(41, 41, 41);
+    color: rgb(139, 128, 240);
+    font-family: Raleway;
+}
+
+header {
+    font-size: 100px;
+    text-align: center;
+    animation: fadein 1.5s ease-in;
+}
+
+.menubar {
+    text-align: center;
+    height: 25px;
+    
+}
+
+.menu1 {
+    animation: fadeinmid 3s ease-in;
+    display: inline;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: font-size .5s;
+}
+
+.menu2 {
+    animation: fadeinlater 4s ease-in;
+    display: inline;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: font-size .5s;
+}
+
+.menu1:hover {
+    font-size: 30px;
+}
+
+.menu2:hover {
+    font-size: 30px;
+}
+
+
+@keyframes fadein {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+@keyframes fadeinmid {
+    from {
+        opacity: 0%;
+    }
+    30% {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+
+
+
+@keyframes fadeinlater {
+    from {
+        opacity: 0%;
+    }
+    50% {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
