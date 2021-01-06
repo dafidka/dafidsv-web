@@ -7,16 +7,19 @@
     font-family: Raleway;
 }
 
-header {
+.hello {
     font-size: 100px;
     text-align: center;
     animation: fadein 1.5s ease-in;
+    width: 50%;
+    transform: translateX(50%);
 }
 
 .menubar {
     text-align: center;
     height: 25px;
-    
+    width: 50%;
+    transform: translateX(50%);
 }
 
 .menu1 {
@@ -45,6 +48,63 @@ header {
     font-size: 30px;
 }
 
+.sidebarpos {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(22, 22, 22);
+    height: 100%;
+    width: 15%;
+    /*transform: translateX(-100%); */
+    transition: transform .5s;
+}
+
+.sidebar {
+    background-color: rgb(22, 22, 22);
+    list-style: none;
+    color: lightcoral;
+    margin: 10px;
+    font-size: 30px;
+    transition: transform .5s;
+}
+
+.cuccok {
+    font-size: 70px;
+    vertical-align: bottom;
+    color: lightcoral;
+    margin: 10px;
+}
+
+.undercuccok {
+    color: lightcoral;
+    background-color: lightcoral;
+    height: 2px;
+    border: none;
+}
+
+.sidebutton {
+    transition: transform .5s;
+    position: inherit;
+    left: 300px;
+    top: 50px;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+input[type=checkbox]:checked ~ .sidebarpos{
+    transform: translateX(-100%);
+ }
+
+ input[type=checkbox]:checked ~ .sidebutton{
+    transform: translateX(-100%);
+ }
+
+
+ .invischeck {
+     position: absolute;
+     top: -9999px;
+     left: -9999px;
+ }
 
 @keyframes fadein {
     from {
