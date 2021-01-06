@@ -28,7 +28,8 @@
     text-decoration: none;
     font-size: 175%;
     padding: 10px;
-    transition: font-size .5s;
+    transition: font-size .5s, color .5s;
+    background: none;
 }
 
 .menu2 {
@@ -37,15 +38,18 @@
     text-decoration: none;
     font-size: 175%;
     padding: 10px;
-    transition: font-size .5s;
+    transition: font-size .5s, color .5s;
+    background: none;
 }
 
 .menu1:hover {
     font-size: 250%;
+    color: lightcoral;
 }
 
 .menu2:hover {
     font-size: 250%;
+    color: lightcoral;
 }
 
 .sidebarpos {
@@ -89,16 +93,15 @@
     cursor: pointer;
     font-size: 30px;
     color: lightcoral;
+    transition: color .5s;
 }
 
-input[type=checkbox]:checked ~ .sidebarpos{
+
+
+
+#check1:checked ~ .sidebarpos{
     transform: translateX(-100%);
  }
-
- input[type=checkbox]:checked ~ .sidebutton{
-    transform: translateX(-100%);
- }
-
 
  .invischeck {
      position: absolute;
